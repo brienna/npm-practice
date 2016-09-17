@@ -47,4 +47,20 @@ To view your package details, to see what you just published, and to check if a 
 
 You don't have to just share code for other people, though. There are also benefits to breaking up your code into small manageable pieces, even if you are only using them all yourself.
 
+#### 09
+
+Version numbers in npm follow a standard called "SemVer", which stands for "Semantic Version". Specs can be found at http://semver.org.
+
+    1.2.3
+    ^ ^ ^
+    | | `-- Patch version. Update for every change.
+    | `---- Minor version. Update for API additions.
+    `------ Major version. Update for breaking API changes.
+
+The npm registry won't let you publish a new release of your package without updating the version number. 
+
+You can update your version number either by hand in `packages.json` or with `npm version`, a command which will update your package.json file for you, and also commit the change to git if your project is a git repository. 
+
+To learn more about any npm command: `$ npm help <command>`
+
     
